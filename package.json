@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Hmahserdjian/Ragtag/issues"
   },
-  "homepage": "https://github.com/Hmahserdjian/Ragtag#readme"
+  "homepage": "https://github.com/Hmahserdjian/Ragtag#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "sequelize": "^4.37.7",
+    "sequelize-cli": "^4.0.0"
+  }
 }
