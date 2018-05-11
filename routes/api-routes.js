@@ -15,7 +15,7 @@ module.exports = function(app) {
 
   // GET route for getting all of the bands
   app.get("/api/bands", function(req, res) {
-
+      
   });
 
   // POST route for saving a new bands. You can create a todo using the data on req.body
