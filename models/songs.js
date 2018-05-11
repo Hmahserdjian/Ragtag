@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
     var Songs = sequelize.define("Songs", {
         name: DataTypes.STRING,
         genre: DataTypes.STRING,
-        duration: DataTypes.TIME
+        duration: DataTypes.TIME,
+        link: DataTypes.STRING
     });
 
 
