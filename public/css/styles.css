@@ -19,12 +19,17 @@ p {
     text-align: center;
 }
 
+body {
+    background-image: url("https: //s-media-cache-ak0.pinimg.com/originals/af/80/af/af80af76a3949a464b0ae823eefe1663.jpg");
+}
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 .carousel,
 .item,
 .active {
-    height: 1000%;
+    height: 100%;
     margin-bottom: 60px;
 }
 
