@@ -2,3 +2,5 @@
 DROP DATABASE IF EXISTS ragtag;
 -- Creates the "blogger" database --
 CREATE DATABASE ragtag;
+
+USE ragtag;
