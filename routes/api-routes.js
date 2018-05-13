@@ -15,8 +15,17 @@ module.exports = function(app) {
 
   // GET route for getting all of the todos
   app.get("/api/bands", function(req, res) {
-      
+    var query = {};
+    if (req.query.bands_id) {
+      query.bandsId = req.query.bands_id;
+    }
+  }); db.bands.findAll({
+    where: query,
+    include: [db.bands]
+  }).then(function(dbbands) {
+    res.json(dbbands);
   });
+});
 
   // POST route for saving a new todo. You can create a todo using the data on req.body
   app.post("/api/bands", function(req, res) {
