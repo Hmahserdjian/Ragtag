@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="pubic/css/style.css" />
+    <script src="../public/js/createProfile.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navi Bar -->
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+       <h1 class="display-4">Create A Profile</h1>
+       <p class="lead">Set up a profile for yourself/your group for fans to discover your music.</p>
+      </div>
+    </div>
+
+<body>
+    <!-- Forms -->
+    <main class="container">
+      <section class="row my-3">
+        <div class="col-md-5 mx-auto">
+          <form>
+            <div class="form-group">
+              <label for="artistName">Artist Name</label>
+              <input type="text" class="form-control" id="artistName" placeholder="Enter Artist Name">
+              <small id="artistNam" class="form-text text-muted">Tell your fans who you are!</small>
+            </div>
+            <div class="form-group">
+              <label for="artistDescription">Artist Description</label>
+              <textarea class="form-control" id="artistDescription" rows="3" placeholder="Artist Description"></textarea>
+              <small id="artistDescrip" class="form-text text-muted">Give the fans a description of yourself!</small>
+            </div>                        
+            <div class="form-group">
+              <label for="smLink">Social Media</label>
+              <input type="link" class="form-control" id="smLink" placeholder="Social Media Link">
+              <small id="links" class="form-text text-muted">Facebook? Soundcloud? Bandcamp? Give your fans a way to connect!</small>
+            </div>
+
+            <div class="form-group">
+              <label for="picLink">Profile Image</label>
+              <input type="link" class="form-control" id="pictureLink" placeholder="Profile Image">
+              <small id="links" class="form-text text-muted">A smoldering glare, a thoughtful gaze, or whatever you want! Add a link to your favorite image!</small>
+            </div>
+            <div class="form-group">
+              <label for="songLinkOne">Song Link One</label>
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link One">
+              <small id="links" class="form-text text-muted">Add links to your music starting here!</small>
+            </div>
+            <div class="form-group">
+              <label for="songLinkTwo">Song Link Two</label>
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link Two">
+            </div>
+            <div class="form-group">
+              <label for="songLinkThree">Song Link Three</label>
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link Three">
+            </div>
+
+          </form>
+          Submit Button
+           <br><br>
+          <div class="mx-auto">
+            <button type="button"id ="userData"  class="btn btn-info btn-lg">Submit</button>
+          </div>
+        </div>
+               
+      </div>
+           </form>
+          </div>
+      </section>
+    </main>  
+
+    <!-- <script>
+      $("#userData").on("click",function(event){
+        var Bands = {
+          artistName: $("#artistName").val(),
+          artistDescription: $("#artistDescription").val(),
+          smLinks: $("#smLink").val(),
+          artistPicture: $("#artistPicture"),
+          artistSong: $("#artistSong")
+        };
+
+        $.post("/api/songs",userInput,function(data){
+          console.log("data passed!");
+        });
+      })
+    </script>
+</body>
+</html> -->

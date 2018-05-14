@@ -10,9 +10,9 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
-
   // cms route loads cms.html
   app.get("/createProfile", function(req, res) {
+    console.log("route ready to lead")
     res.sendFile(path.join(__dirname, "../public/createProfile.html"));
   });
 
@@ -20,10 +20,11 @@ module.exports = function(app) {
   app.get("/bandList", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/bandList.html"));
   });
-
-  // authors route loads author-manager.html
-  app.get("/authors", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/bandPage.html"));
+  app.get("/bandProfile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/bandProfile.html"));
   });
+
+ 
+
 
 };
