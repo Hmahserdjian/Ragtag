@@ -1,1 +1,4 @@
-// logic for the app goes here.
+// git checkout index-logic
+$(document).ready(function() {
+    
+})

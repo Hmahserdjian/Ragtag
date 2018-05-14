@@ -13,7 +13,7 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the todos
+  // GET route for getting all the bands
   app.get("/api/bands", function(req, res) {
     var query = {};
     if (req.query.bands_id) {
@@ -25,11 +25,20 @@ module.exports = function(app) {
   }).then(function(dbbands) {
     res.json(dbbands);
   });
-});
+
 
   // POST route for saving a new todo. You can create a todo using the data on req.body
   app.post("/api/bands", function(req, res) {
-
+    db.bands.create({
+        artistName:req.body.artistName,
+        artistDescription: req.body.artistDescription,
+        smLinks: req.body.smLinks,
+        artistPicture: req.body.artistPicture,
+        artistSong:req.body.artistSong
+    }).then(function(dbBands) {
+      res.json(dbBands);
+    });
+  
   });
 
   // DELETE route for deleting todos. You can access the todo's id in req.params.id
