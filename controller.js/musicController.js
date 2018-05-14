@@ -11,8 +11,11 @@ var band = require("../models.bands.js").sequelize.models.band;
 // creating all our routes and set up logic within those routes where required.
 router.get("/", function(req, res, next) {
     bands.all(function(data) {
-        
+     
     });
+});
+router.get("/createProfile", function(req, res, next) { 
+    res.sendFile(path.join(__dirname, '../public', 'createProfile.html'));
 });
 
 router.post("/api/routes", function(req, res, next) {

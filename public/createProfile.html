@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="pubic/css/style.css" />
     <script src="../public/js/createProfile.js"></script>
 
 </head>
@@ -63,36 +66,57 @@
 
             <div class="form-group">
               <label for="picLink">Profile Image</label>
-              <input type="link" class="form-control" id="picLink" placeholder="Profile Image">
+
+              <input type="link" class="form-control" id="pictureLink" placeholder="Profile Image">
+
               <small id="links" class="form-text text-muted">A smoldering glare, a thoughtful gaze, or whatever you want! Add a link to your favorite image!</small>
             </div>
             <div class="form-group">
               <label for="songLinkOne">Song Link One</label>
-              <input type="link" class="form-control" id="songLinkOne" placeholder="Song Link One">
+
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link One">
+
               <small id="links" class="form-text text-muted">Add links to your music starting here!</small>
             </div>
             <div class="form-group">
               <label for="songLinkTwo">Song Link Two</label>
-              <input type="link" class="form-control" id="songLinkTwo" placeholder="Song Link Two">
+
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link Two">
             </div>
             <div class="form-group">
               <label for="songLinkThree">Song Link Three</label>
-              <input type="link" class="form-control" id="songLinkThree" placeholder="Song Link Three">
+              <input type="link" class="form-control" id="songLink" placeholder="Song Link Three">
             </div>
 
           </form>
-          <!-- Submit Button -->
-          <br><br>
+          Submit Button
+           <br><br>
           <div class="mx-auto">
-            <button type="button" class="btn btn-info btn-lg">Submit</button>
+            <button type="button"id ="userData"  class="btn btn-info btn-lg">Submit</button>
           </div>
         </div>
+               
+      </div>
+           </form>
+          </div>
       </section>
-    </main>
+    </main>  
 
+    <!-- <script>
+      $("#userData").on("click",function(event){
+        var Bands = {
+          artistName: $("#artistName").val(),
+          artistDescription: $("#artistDescription").val(),
+          smLinks: $("#smLink").val(),
+          artistPicture: $("#artistPicture"),
+          artistSong: $("#artistSong")
+        };
 
-    
- 
-    
+        $.post("/api/songs",userInput,function(data){
+          console.log("data passed!");
+        });
+      })
+    </script>
+
 </body>
 </html> -->
