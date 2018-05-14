@@ -1,5 +1,5 @@
 /* Our styling goes here */
-#button  {
+/* #button  {
     text-align: center;
     text-decoration-color: white;
     color: black;
@@ -21,12 +21,12 @@ p {
 
 body {
     background-image: url("https: //s-media-cache-ak0.pinimg.com/originals/af/80/af/af80af76a3949a464b0ae823eefe1663.jpg");
-}
+} */
 
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-.carousel,
+/* .carousel,
 .item,
 .active {
     height: 100%;
@@ -35,7 +35,7 @@ body {
 
 .carousel-inner {
     height: 50%;
-}
+} */
 
 /* Background images are set within the HTML using inline CSS, not here */
 
@@ -60,7 +60,7 @@ body {
     height: 100%;
 } */
 
-.container1 .btn {
+/* .container1 .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,4 +78,4 @@ body {
 
 .container1 .btn:hover {
     background-color: black;
-}
+} */

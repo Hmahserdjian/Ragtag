@@ -1,3 +1,4 @@
+
 // git checkout Profile-logic
 // git checkout Profile-logic
 $(document).ready(function () {
@@ -95,3 +96,4 @@ $(document).ready(function () {
             });
     }
 });
+
