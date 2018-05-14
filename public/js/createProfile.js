@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(document).ready(function() {
   $("#userData").on("click",function(event){
         function handleFormSubmit(event) {
@@ -37,7 +37,7 @@ $(document).ready(function() {
     }
 });
     
-=======
+
 
 // git checkout Profile-logic
 // git checkout Profile-logic
@@ -137,4 +137,3 @@ $(document).ready(function () {
     }
 });
 
->>>>>>> 9e7519a9bcaaa19aa8e1bb493da947212bb7c628
