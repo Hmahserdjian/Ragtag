@@ -12,7 +12,7 @@ module.exports = function(app) {
   });
   // cms route loads cms.html
   app.get("/createProfile", function(req, res) {
-    console.log("route ready to lead")
+    console.log("route ready to lead");
     res.sendFile(path.join(__dirname, "../public/createProfile.html"));
   });
 

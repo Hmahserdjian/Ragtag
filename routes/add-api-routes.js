@@ -14,21 +14,21 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all the bands
-  app.get("/api/bands", function(req, res) {
+  app.get("/api/Bands", function(req, res) {
     var query = {};
-    if (req.query.bands_id) {
-      query.bandsId = req.query.bands_id;
+    if (req.query.Bands) {
+      query.BandsId = req.query.Bands_id;
     }
-  }); db.bands.findAll({
-    where: query,
-    include: [db.bands]
-  }).then(function(dbbands) {
-    res.json(dbbands);
+    db.Post.findAll({
+      where: query
+    }).then(function(dbBands) {
+      res.json(dbBands);
+    });
   });
 
 
   // POST route for saving a new todo. You can create a todo using the data on req.body
-  app.post("/api/bands", function(req, res) {
+  app.post("/api/Bands", function(req, res) {
     db.bands.create({
         artistName:req.body.artistName,
         artistDescription: req.body.artistDescription,
@@ -37,17 +37,18 @@ module.exports = function(app) {
         artistSong:req.body.artistSong
     }).then(function(dbBands) {
       res.json(dbBands);
+      console.log("stored some data");
     });
   
   });
 
   // DELETE route for deleting todos. You can access the todo's id in req.params.id
-  app.delete("/api/bands", function(req, res) {
+  app.delete("/api/Bands", function(req, res) {
 
   });
 
   // PUT route for updating todos. The updated todo will be available in req.body
-  app.put("/api/bands", function(req, res) {
+  app.put("/api/Bands", function(req, res) {
 
   });
 };
