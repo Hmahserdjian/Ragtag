@@ -12,31 +12,38 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     
     </head>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-      
-        <!-- Navi Bar -->
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
-        </ul>
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <h1 class="Main">Discover Me</h1>
+    <p class="lead">A place where musicians can show case their songs</p>
+</div>
+<div class="container">
+    <div id="button">
+        <button onclick="window.location.href='/createProfile'" class="btn btn-primary">Create a Profile</button>
+        <button onclick="window.location.href='/bandList'" class="btn btn-primary">Check out bands</button>
+        </div>
     </div>
-    </nav>
+</div>
 
-    <div class="jumbotron jumbotron-fluid">
-     <div class="container">
-       <h1 class="display-4">Discover</h1>
-       <p class="lead">Discover talent; local or otherwise.</p>
-     </div>
+<div class="container bands">
+
+    <div class="card text-white border-info mb-3" style="max-width: 20rem;">
+        <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h6 class="card-subtitle mb-2">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
     </div>
-    
+</div>
+
+<!-- copyright -->
+<div class="container">
+    <footer>
+        <p>Discover Me 2018</p>
+    </footer>
+</div>
+</body>
 </body>
 </html>
