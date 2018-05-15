@@ -1,81 +1,8 @@
-/* Our styling goes here */
-/* #button  {
-    text-align: center;
-    text-decoration-color: white;
-    color: black;
-}
-
-#button2  {
-    text-align: center;
-    text-decoration-color: white;
-    color: black;
-}
-
-h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-body {
-    background-image: url("https: //s-media-cache-ak0.pinimg.com/originals/af/80/af/af80af76a3949a464b0ae823eefe1663.jpg");
-} */
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* .carousel,
-.item,
-.active {
+/* body, html {
     height: 100%;
-    margin-bottom: 60px;
-}
-
-.carousel-inner {
-    height: 50%;
-} */
-
-/* Background images are set within the HTML using inline CSS, not here */
-
-/* .fill {
-    width: 100%;
-    height: 100%;
+    background-image: url(http://www.friendlyfirerecordings.com/Bands/Faunts/faunts_hires_1.jpg); 
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
-    -o-background-size: cover;
 } */
 
-/* .container1 {
-    position: relative;
-    width: 100%;
-    max-width: 4000px;
-} */
-
-/* .container1 img {
-    width: 100%;
-    height: 100%;
-} */
-
-/* .container1 .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.container1 .btn:hover {
-    background-color: black;
-} */
