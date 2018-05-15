@@ -15,26 +15,21 @@ module.exports = function(app) {
 
   // GET route for getting all the bands
   app.get("/api/bands", function(req, res) {
-    var query = {};
-    if (req.query.bands_id) {
-      query.bandsId = req.query.bands_id;
-    }
-  }); db.bands.findAll({
-    where: query,
-    include: [db.bands]
-  }).then(function(dbbands) {
-    res.json(dbbands);
+    db.Bands.findAll().then(function(dbbands) {
+      res.json(dbbands);
+    });
   });
 
 
   // POST route for saving a new todo. You can create a todo using the data on req.body
   app.post("/api/bands", function(req, res) {
-    db.bands.create({
+    console.log("band post: " + JSON.stringify(req.body))
+    db.Bands.create({
         artistName:req.body.artistName,
         artistDescription: req.body.artistDescription,
-        smLinks: req.body.smLinks,
-        artistPicture: req.body.artistPicture,
-        artistSong:req.body.artistSong
+        smLinks: req.body.smLinks
+        // artistPicture: req.body.artistPicture,
+        // artistSong:req.body.artistSong
     }).then(function(dbBands) {
       res.json(dbBands);
     });

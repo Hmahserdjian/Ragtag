@@ -3,7 +3,7 @@ $(document).ready(function() {
         function handleFormSubmit(event) {
             event.preventDefault();
                     // Wont submit the post if we are missing values
-            if (!artistName.val().trim() || !artistDescription.val().trim() || !smLinks.val().trim() || !artistPicture.val().trim() || !artistSong.val().trim()) {
+            if (!artistName.val().trim() || !artistDescription.val().trim() || !smLinks.val().trim() ) {
                 alert("missing some tunes");
                 return;
             //passing userinput into values                    
@@ -12,8 +12,8 @@ $(document).ready(function() {
                                 artistName: $("#artistName").val().trim(),
                                 artistDescription: $("#artistDescription").val().trim(),
                                 smLinks: $("#smLink").val(),
-                                artistPicture: $("#pictureLink").trim(),
-                                artistSong: $("#songLink").trim()
+                                // artistPicture: $("#pictureLink").trim(),
+                                // artistSong: $("#songLink").trim()
                                 
                 });
                 console.log("data ready to load");

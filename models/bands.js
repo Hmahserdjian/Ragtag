@@ -9,8 +9,8 @@ module.exports = function(sequelize, DataTypes) {
                 artistName: DataTypes.STRING,
                 artistDescription:DataTypes.STRING,
                 smLinks:DataTypes.STRING,
-                artistPicture: DataTypes.STRING,
-                artistSong:DataTypes.STRING
+                // artistPicture: DataTypes.STRING,
+                // artistSong:DataTypes.STRING
          });
     
           return Bands;
