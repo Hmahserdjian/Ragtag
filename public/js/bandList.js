@@ -14,7 +14,7 @@ $(document).ready(function() {
             id = "/?id=" + id;
         }
 
-        $.get("/api/bands" + id, function(data){
+        $.get("add/api/routes" + id, function(data){
             console.log("posts", data)
             posts = data;
         })

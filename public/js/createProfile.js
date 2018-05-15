@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     function upsertBands(bandData) {
-        $.post("/api/Bands", bandData)
+        $.post("/api/bands", bandData)
         .then(getBands);
         
 
