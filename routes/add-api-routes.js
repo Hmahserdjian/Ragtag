@@ -45,4 +45,9 @@ module.exports = function(app) {
   app.put("/api/bands", function(req, res) {
 
   });
+
+  // 
+  app.get("/bandList", function (req, res) {
+    
+  })
 };
