@@ -20,6 +20,7 @@ module.exports = function(app) {
   app.get("/bandList", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/bandList.html"));
   });
+  
   app.get("/bandProfile", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/bandProfile.html"));
   });
